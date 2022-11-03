@@ -18,13 +18,26 @@ class MyApp extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Flutter QvaPay Payment'),
       ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            FlutterQvapayPayment.pay(context);
-          },
-          child: const Text('Pay with QvaPay'),
-        ),
+      body: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          ElevatedButton(
+            onPressed: () {
+              FlutterQvapayPayment.showUserQrInfo(
+                context,
+                'asd',
+                'asd',
+              );
+            },
+            child: const Text('Show User QR Info'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              FlutterQvapayPayment.pay(context);
+            },
+            child: const Text('Pay with QvaPay'),
+          ),
+        ],
       ),
     );
   }

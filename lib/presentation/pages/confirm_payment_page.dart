@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_qvapay_payment/pages/result_payment.dart';
+import 'package:flutter_qvapay_payment/presentation/pages/pages.dart';
 
 class ConfirmPayment extends StatelessWidget {
   const ConfirmPayment({

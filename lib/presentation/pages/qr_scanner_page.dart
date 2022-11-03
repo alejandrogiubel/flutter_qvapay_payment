@@ -7,10 +7,7 @@ class QrScanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final GlobalKey qrKey = GlobalKey(debugLabel: 'QR');
-    var scanArea = (MediaQuery.of(context).size.width < 400 ||
-            MediaQuery.of(context).size.height < 400)
-        ? 150.0
-        : 300.0;
+    var scanArea = 300.0;
     QRViewController? controller;
     ValueNotifier<bool> flashOn = ValueNotifier<bool>(false);
     return Scaffold(
