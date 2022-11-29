@@ -36,7 +36,7 @@ class FlutterQvapayPayment {
     // autenticarse
     // crear la transaccion
     // efectuar pago
-    // mostrar resultado del pago
+    // mostrar resultado del pago.
     Navigator.push(
       context,
       MaterialPageRoute(
